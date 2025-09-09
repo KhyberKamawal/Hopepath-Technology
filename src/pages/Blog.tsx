@@ -1,75 +1,75 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Calendar, User, ArrowRight, Tag } from 'lucide-react';
 
 const Blog = () => {
   const blogPosts = [
     {
-      id: 1,
-      title: 'The Future of Web Development: Trends to Watch in 2025',
-      excerpt: 'Explore the latest trends shaping the web development landscape, from AI integration to progressive web apps.',
-      image: 'https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=800',
-      author: 'Khyber Kamawal',
-      date: '2025-01-15',
-      category: 'Web Development',
-      readTime: '5 min read',
-      tags: ['React', 'AI', 'PWA']
-    },
-    {
-      id: 2,
-      title: 'Mobile App Development: Native vs Cross-Platform',
-      excerpt: 'A comprehensive comparison of native and cross-platform development approaches for mobile applications.',
-      image: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=800',
-      author: 'Abdul Qadeer Shinwarai',
-      date: '2025-01-12',
-      category: 'Mobile Development',
-      readTime: '7 min read',
-      tags: ['React Native', 'Flutter', 'iOS', 'Android']
-    },
-    {
-      id: 3,
-      title: 'UI/UX Design Principles for Better User Experience',
-      excerpt: 'Learn about fundamental design principles that create intuitive and engaging user experiences.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      author: 'Mashal Zerak',
-      date: '2025-01-10',
-      category: 'Design',
-      readTime: '6 min read',
-      tags: ['UX Design', 'UI Design', 'User Research']
-    },
-    {
-      id: 4,
-      title: 'Database Optimization Techniques for Scalable Applications',
-      excerpt: 'Best practices for optimizing database performance and ensuring scalability in modern web applications.',
-      image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800',
-      author: 'Abdul Basheer Aryan',
-      date: '2025-01-08',
-      category: 'Backend Development',
-      readTime: '8 min read',
-      tags: ['Database', 'MongoDB', 'PostgreSQL', 'Optimization']
-    },
-    {
-      id: 5,
-      title: 'SEO Strategies That Actually Work in 2025',
-      excerpt: 'Discover effective SEO techniques that drive organic traffic and improve search engine rankings.',
-      image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800',
-      author: 'Khyber Kamawal',
-      date: '2025-01-05',
-      category: 'Digital Marketing',
-      readTime: '10 min read',
-      tags: ['SEO', 'Digital Marketing', 'Content Strategy']
-    },
-    {
-      id: 6,
-      title: 'Cloud Computing: Choosing the Right Platform',
-      excerpt: 'A guide to selecting the best cloud platform for your application hosting and deployment needs.',
-      image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800',
-      author: 'Abdul Basheer Aryan',
-      date: '2025-01-03',
-      category: 'Cloud Technology',
-      readTime: '9 min read',
-      tags: ['AWS', 'Google Cloud', 'Azure', 'DevOps']
-    }
+    id: 1,
+    title: 'How We Built a Modern E-Commerce Platform for a Startup',
+    excerpt: 'A behind-the-scenes look at how our team designed and developed a scalable e-commerce solution tailored to a client’s unique needs.',
+    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
+    author: 'Khyber Kamawal',
+    date: '2025-August-15',
+    category: 'Case Study',
+    readTime: '5 min read',
+    tags: ['E-Commerce', 'React', 'Scalability']
+  },
+  {
+    id: 2,
+    title: 'Native vs Cross-Platform: What We Recommend to Clients',
+    excerpt: 'We often get asked whether to build native apps or go cross-platform. Here’s how we guide clients to make the right choice for their goals.',
+    image: 'https://images.pexels.com/photos/4974912/pexels-photo-4974912.jpeg?auto=compress&cs=tinysrgb&w=800',
+    author: 'Abdul Qadeer Shinwarai',
+    date: '2025-05-12',
+    category: 'Mobile Development',
+    readTime: '6 min read',
+    tags: ['React Native', 'Flutter', 'Mobile Apps']
+  },
+  {
+    id: 3,
+    title: 'Our UI/UX Design Process: From Idea to Prototype',
+    excerpt: 'Good design isn’t just about looks—it’s about solving problems. Here’s how we approach user research, wireframing, and prototyping.',
+    image: 'https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg?auto=compress&cs=tinysrgb&w=800',
+    author: 'Mashal Zerak',
+    date: '2025-07-10',
+    category: 'Design',
+    readTime: '7 min read',
+    tags: ['UI/UX', 'Wireframing', 'Prototyping']
+  },
+  {
+    id: 4,
+    title: 'Database Optimization: Lessons from a Real Project',
+    excerpt: 'We helped a client reduce query times by 70%. In this article, we share the steps we took to optimize their database performance.',
+    image: 'https://images.pexels.com/photos/1181345/pexels-photo-1181345.jpeg?auto=compress&cs=tinysrgb&w=800',
+    author: 'Abdul Basheer Aryan',
+    date: '2025-06-08',
+    category: 'Backend Development',
+    readTime: '8 min read',
+    tags: ['Database', 'Optimization', 'PostgreSQL']
+  },
+  {
+    id: 5,
+    title: 'SEO for Small Businesses: What Really Works',
+    excerpt: 'Instead of chasing every new trend, we focus on practical SEO strategies that bring consistent results for our clients.',
+    image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
+    author: 'Khyber Kamawal',
+    date: '2025-09-05',
+    category: 'Digital Marketing',
+    readTime: '6 min read',
+    tags: ['SEO', 'Content Strategy', 'Marketing']
+  },
+  {
+    id: 6,
+    title: 'Why We Chose AWS for a Scalable Client Project',
+    excerpt: 'Cloud platforms aren’t one-size-fits-all. Here’s why AWS was the best choice for one of our clients needing global scalability.',
+    image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800',
+    author: 'Abdul Basheer Aryan',
+    date: '2025-05-03',
+    category: 'Cloud Technology',
+    readTime: '7 min read',
+    tags: ['AWS', 'Scalability', 'Cloud']
+  }
   ];
 
   const categories = ['All', 'Web Development', 'Mobile Development', 'Design', 'Backend Development', 'Digital Marketing', 'Cloud Technology'];
