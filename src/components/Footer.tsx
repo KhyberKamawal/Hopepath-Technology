@@ -95,7 +95,7 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-gray-400 hover:text-cyan-400 transition-colors duration-300">
                 <Mail className="h-4 w-4 text-cyan-400" />
-                <span>khyberk460@gmail.com</span>
+                <span>Hopepathtechnology@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-400 hover:text-cyan-400 transition-colors duration-300">
                 <Phone className="h-4 w-4 text-cyan-400" />
