@@ -1,6 +1,21 @@
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Clock, Send, MessageSquare } from 'lucide-react';
+import toast, { Toaster } from 'react-hot-toast';
+
+// WhatsApp settings
+const WHATSAPP_NUMBER = "93776583537"; // Don't use leading 00
+const DEFAULT_MESSAGE = "Hello, I want to discuss a project. For now, you can contact us through WhatsApp.";
+
+// Redirect function
+const redirectToWhatsApp = (message?: string) => {
+  toast.success("Redirecting you to WhatsApp...");
+  setTimeout(() => {
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message || DEFAULT_MESSAGE)}`;
+    window.open(url, "_blank");
+  }, 1000);
+};
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,8 +36,18 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+
+    const userMessage = `Hello, I am ${formData.name}.
+Email: ${formData.email}
+Company: ${formData.company || "N/A"}
+Service: ${formData.service}
+Budget: ${formData.budget || "N/A"}
+Message: ${formData.message}
+
+For now, you can contact us through WhatsApp.`;
+
+    redirectToWhatsApp(userMessage);
+
     // Reset form
     setFormData({
       name: '',
@@ -32,11 +57,13 @@ const Contact = () => {
       budget: '',
       message: ''
     });
-    alert('Thank you for your message! We\'ll get back to you soon.');
   };
 
   return (
     <div>
+      {/* Toast Container */}
+      <Toaster position="top-right" reverseOrder={false} />
+
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
         <div className="absolute inset-0">
@@ -136,7 +163,10 @@ const Contact = () => {
                 <p className="text-gray-600 mb-4">
                   Need immediate assistance? Our live chat support is available during business hours.
                 </p>
-                <button className="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
+                <button
+                  onClick={() => redirectToWhatsApp()}
+                  className="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200"
+                >
                   Start Live Chat
                 </button>
               </div>
@@ -274,37 +304,37 @@ const Contact = () => {
         </div>
       </section>
 
- {/* Map Section */}
-<section className="py-20 bg-gray-50">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      className="text-center mb-12"
-    >
-      <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Location</h2>
-      <p className="text-lg text-gray-600">
-        Visit our office for in-person consultations and project discussions
-      </p>
-    </motion.div>
+      {/* Map Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Location</h2>
+            <p className="text-lg text-gray-600">
+              Visit our office for in-person consultations and project discussions
+            </p>
+          </motion.div>
 
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-  <div className="aspect-w-16 aspect-h-9">
-    <iframe
-      src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Plot%20No,%2025%20Street%2045,%20markaz%20SCHS%20E%2011/2%20E-11,%20Islamabad,%2044000,%20Pakistan+(Hopepath%20Technology)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-      width="100%"
-      height="400"
-      style={{ border: 0 }}
-      allowFullScreen
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-      title="Our Islamabad (E-11/2 Markaz) Location"
-    ></iframe>
-  </div>
-</div>
-  </div>
-</section>
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="aspect-w-16 aspect-h-9">
+              <iframe
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Plot%20No,%2025%20Street%2045,%20markaz%20SCHS%20E%2011/2%20E-11,%20Islamabad,%2044000,%20Pakistan+(Hopepath%20Technology)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Our Islamabad (E-11/2 Markaz) Location"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Newsletter Section */}
       <section className="py-20">
