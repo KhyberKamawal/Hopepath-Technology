@@ -45,7 +45,7 @@ const Footer = () => {
               <a href="#" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-cyan-400 hover:bg-slate-700 transition-all duration-300 hover:scale-110">
                 <Linkedin className="h-4 w-4" />
               </a>
-              <a href="#" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-cyan-400 hover:bg-slate-700 transition-all duration-300 hover:scale-110">
+              <a href="https://github.com/KhyberKamawal" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-cyan-400 hover:bg-slate-700 transition-all duration-300 hover:scale-110">
                 <Github className="h-4 w-4" />
               </a>
             </div>

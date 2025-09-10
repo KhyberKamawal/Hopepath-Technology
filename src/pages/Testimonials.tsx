@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Star, Quote } from 'lucide-react';
 import { testimonials } from '../data/testimonialsData';
@@ -97,7 +97,7 @@ const Testimonials = () => {
               { number: '4.9/5', label: 'Average Rating' },
               { number: '98%', label: 'Client Satisfaction' },
               { number: '95%', label: 'Project Success Rate' },
-              { number: '80+', label: 'Happy Clients' }
+              { number: '90%', label: 'Happy Clients' }
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}

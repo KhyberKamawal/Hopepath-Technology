@@ -19,6 +19,7 @@ export const teamMembers = [
     github: 'https://github.com/KhyberKamawal',
     twitter: '#'
   }
+
 },
   {
     id: 2,
