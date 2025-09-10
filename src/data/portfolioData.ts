@@ -86,38 +86,38 @@ export const portfolioProjects = [
   githubUrl: '#'
 }
 ,
-  {
-    id: 5,
-    title: 'Learning Management System',
-    description: 'Comprehensive LMS platform for online education with course management, progress tracking, and interactive features.',
-    image: 'https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=800',
-    category: 'Web Application',
-    technologies: ['React', 'Express.js', 'MongoDB', 'Socket.io', 'AWS S3'],
-    features: [
-      'Course creation & management',
-      'Student progress tracking',
-      'Interactive video lessons',
-      'Discussion forums',
-      'Certificate generation'
-    ],
-    liveUrl: '#',
-    githubUrl: '#'
-  },
-  {
-    id: 6,
-    title: 'Real Estate Platform',
-    description: 'Property listing platform with advanced search, virtual tours, and agent management system.',
-    image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800',
-    category: 'Website',
-    technologies: ['WordPress', 'PHP', 'MySQL', 'Google Maps', 'IDX Integration'],
-    features: [
-      'Property search & filtering',
-      'Virtual tour integration',
-      'Agent profiles & management',
-      'Mortgage calculator',
-      'Lead generation forms'
-    ],
-    liveUrl: '#',
-    githubUrl: '#'
-  }
+  // {
+  //   id: 5,
+  //   title: 'Learning Management System',
+  //   description: 'Comprehensive LMS platform for online education with course management, progress tracking, and interactive features.',
+  //   image: 'https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=800',
+  //   category: 'Web Application',
+  //   technologies: ['React', 'Express.js', 'MongoDB', 'Socket.io', 'AWS S3'],
+  //   features: [
+  //     'Course creation & management',
+  //     'Student progress tracking',
+  //     'Interactive video lessons',
+  //     'Discussion forums',
+  //     'Certificate generation'
+  //   ],
+  //   liveUrl: '#',
+  //   githubUrl: '#'
+  // },
+  // {
+  //   id: 6,
+  //   title: 'Real Estate Platform',
+  //   description: 'Property listing platform with advanced search, virtual tours, and agent management system.',
+  //   image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800',
+  //   category: 'Website',
+  //   technologies: ['WordPress', 'PHP', 'MySQL', 'Google Maps', 'IDX Integration'],
+  //   features: [
+  //     'Property search & filtering',
+  //     'Virtual tour integration',
+  //     'Agent profiles & management',
+  //     'Mortgage calculator',
+  //     'Lead generation forms'
+  //   ],
+  //   liveUrl: '#',
+  //   githubUrl: '#'
+  // }
 ];
