@@ -82,10 +82,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Our Services</h3>
             <ul className="space-y-2">
-              <li className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 cursor-pointer" > <a href="/services">Website Development</a></li>
-              <li className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 cursor-pointer"><a href="/services"> Web Applications</a></li>
-              <li className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 cursor-pointer"><a href="/services">Mobile App Development</a></li>
-              <li className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 cursor-pointer"><a href="/services">SEO Optimization</a></li>
+              <li className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 cursor-pointer" > <a href="/Services">Website Development</a></li>
+              <li className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 cursor-pointer"><a href="/Services"> Web Applications</a></li>
+              <li className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 cursor-pointer"><a href="/Services">Mobile App Development</a></li>
+              <li className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 cursor-pointer"><a href="/Services">SEO Optimization</a></li>
             </ul>
           </div>
 
