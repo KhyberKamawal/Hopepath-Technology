@@ -74,6 +74,27 @@ export const teamMembers = [
     github: '#',
     twitter: '#'
   }
+},
+{
+  id: 5,
+  name: 'Azizullah Hazrati',
+  role: 'Frontend Developer & UI/UX Designer',
+  description: 'Innovative frontend developer with a strong eye for design and detail. Skilled in building responsive, user-friendly web applications and translating creative ideas into modern digital experiences. Passionate about combining clean code with intuitive design to deliver engaging interfaces.',
+  image: '/Azizullah.png',
+  skills: [
+    'HTML5 & CSS3',
+    'JavaScript',
+    'React.js',
+    'Tailwind CSS',
+    'UI/UX Design',
+    'Figma'
+  ],
+  social: {
+    linkedin: '#',
+    github: '#',
+    twitter: '#'
+  }
 }
+
 
 ];
