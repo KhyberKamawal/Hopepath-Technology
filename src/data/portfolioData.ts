@@ -19,7 +19,7 @@ export const portfolioProjects = [
     "Modern UI: Clean design with light/dark mode and history tracking"
   ],
   liveUrl: "https://smartcalculatortools.netlify.app/",
-  githubUrl: "https://github.com/yourusername/smart-calculator-tools"
+  githubUrl: "https://github.com/KhyberKamawal/Smartcalculator"
 },
 {
   id: 2,
@@ -86,23 +86,24 @@ export const portfolioProjects = [
   githubUrl: '#'
 }
 ,
-  {
-    id: 5,
-    title: 'Learning Management System',
-    description: 'Comprehensive LMS platform for online education with course management, progress tracking, and interactive features.',
-    image: 'https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=800',
-    category: 'Web Application',
-    technologies: ['React', 'Express.js', 'MongoDB', 'Socket.io', 'AWS S3'],
-    features: [
-      'Course creation & management',
-      'Student progress tracking',
-      'Interactive video lessons',
-      'Discussion forums',
-      'Certificate generation'
-    ],
-    liveUrl: '#',
-    githubUrl: '#'
-  },
+{
+  id: 5,
+  title: 'Smart Travel Checklist',
+  description: 'A smart and customizable travel checklist app that helps users plan trips efficiently by organizing essentials, tracking items, and ensuring nothing is forgotten.',
+  image: 'https://images.unsplash.com/photo-1589820296156-2454bb8f3ba3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+  category: 'Web Application',
+  technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Netlify'],
+  features: [
+    'Create & manage travel checklists',
+    'Predefined essential travel items',
+    'Custom item addition',
+    'Progress tracking with checkboxes',
+    'Responsive and user-friendly UI'
+  ],
+  liveUrl: 'https://smarttravelchecklist.netlify.app/',
+  githubUrl: ' https://github.com/KhyberKamawal/smart-travel-checklist'
+}
+,
   {
     id: 6,
     title: 'Real Estate Platform',
